@@ -21,6 +21,12 @@ jobs:
         cd /tmp/janet
         sudo make all test install
 
+    - name: build jpm
+      run: |
+        git clone --depth 1 --branch v1.1.0 https://github.com/janet-lang/jpm.git /tmp/jpm
+        cd /tmp/jpm
+        sudo janet bootstrap.janet
+
     - name: install janet deps
       run: sudo jpm deps
 
