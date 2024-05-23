@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   publish:
-    runs-on: ubuntu-latest
+    runs-on: dellE6410 # ubuntu-latest
     steps:
     - uses: actions/checkout@v2
       with:
