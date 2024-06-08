@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: source
+        ref: source-spinoff
 
     - name: update apt
       run: sudo apt-get update -y
